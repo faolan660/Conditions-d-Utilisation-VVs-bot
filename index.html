@@ -1,235 +1,287 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conditions d'utilisation — VVs Bot</title>
-<style>
-:root {
-  color-scheme: dark;
-  --bg:#0f1117; --card:#171a23; --text:#e8eaf0;
-  --muted:#a9afbf; --accent:#7c5cff; --border:#2a2f3d;
-}
-* { box-sizing:border-box; }
-body {
-  margin:0; padding:40px 20px; background:var(--bg); color:var(--text);
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  line-height:1.7;
-}
-main {
-  max-width:900px; margin:auto; padding:42px; background:var(--card);
-  border:1px solid var(--border); border-radius:18px;
-  box-shadow:0 15px 50px rgba(0,0,0,.25);
-}
-h1,h2 { line-height:1.25; }
-h1 { font-size:2.2rem; margin-top:0; }
-h2 {
-  margin-top:2.2rem; padding-bottom:.45rem;
-  border-bottom:1px solid var(--border);
-}
-strong { color:#fff; }
-a { color:#9d8cff; }
-blockquote {
-  margin:1.5rem 0; padding:1rem 1.2rem;
-  border-left:4px solid var(--accent);
-  background:rgba(124,92,255,.08); color:var(--muted);
-}
-li { margin:.45rem 0; }
-hr { border:0; border-top:1px solid var(--border); margin:2rem 0; }
-@media (max-width:600px) {
-  body { padding:15px 10px; }
-  main { padding:24px 18px; border-radius:12px; }
-  h1 { font-size:1.8rem; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions d'utilisation — VVs Bot</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0f1117;
+            --card: #171a23;
+            --text: #e8eaf0;
+            --muted: #a9afbf;
+            --accent: #7c5cff;
+            --border: #2a2f3d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 42px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
+        }
+
+        h1,
+        h2 {
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 2.2rem;
+            padding-bottom: .45rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        a {
+            color: #9d8cff;
+        }
+
+        blockquote {
+            margin: 1.5rem 0;
+            padding: 1rem 1.2rem;
+            border-left: 4px solid var(--accent);
+            background: rgba(124, 92, 255, .08);
+            color: var(--muted);
+        }
+
+        li {
+            margin: .45rem 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        @media (max-width:600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            main {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<main>
-<h1>Conditions d'utilisation — VVs Bot</h1>
-<p><strong>Dernière mise à jour : [DATE À COMPLÉTER]</strong></p>
-<blockquote>Ce document n'est pas un avis juridique professionnel. Il décrit de bonne foi le</blockquote>
-<blockquote>fonctionnement du bot et les règles d'usage. Si le bot est utilisé à grande échelle</blockquote>
-<blockquote>ou sert un public dans l'Union européenne, il est recommandé de le faire relire par</blockquote>
-<blockquote>un professionnel du droit.</blockquote>
-<h2>1. Objet</h2>
-<p>Les présentes Conditions d'Utilisation (« CU ») régissent l'usage du bot Discord</p>
-<p><strong>VVs Bot</strong> (le « Bot »), développé et maintenu par <strong>[TON NOM / PSEUDO]</strong> (l'« Éditeur »),</p>
-<p>ainsi que de son interface web associée (le « Dashboard ») et du site public listant les</p>
-<p>membres bannis du groupe VRChat (le « Site des bannis »).</p>
-<p>En ajoutant le Bot à un serveur Discord, en utilisant l'une de ses commandes, ou en</p>
-<p>accédant au Dashboard, vous acceptez sans réserve les présentes CU. Si vous n'êtes pas</p>
-<p>d'accord, n'utilisez pas le Bot.</p>
-<h2>2. Description du service</h2>
-<p>Le Bot propose, selon les serveurs sur lesquels il est installé :</p>
-<ul>
-<li><strong>Modération Discord</strong> : kick, ban, timeout, avertissements, purge de messages,</li>
-</ul>
-<p>  anti-spam et anti-raid automatiques.</p>
-<ul>
-<li><strong>Gestion de serveur</strong> : création/suppression de salons, catégories et rôles.</li>
-<li><strong>Surveillance VRChat</strong> : suivi des instances ouvertes d'un groupe VRChat, relais des</li>
-</ul>
-<p>  annonces du groupe, détection et journalisation des kicks/avertissements/bannissements</p>
-<p>  appliqués au sein de ce groupe.</p>
-<ul>
-<li><strong>Compte(s) VRChat lié(s)</strong> : pour assurer cette surveillance, un ou plusieurs comptes</li>
-</ul>
-<p>  VRChat doivent être connectés au Bot par un membre autorisé du serveur (voir section 4).</p>
-<ul>
-<li><strong>Système d'XP et de communauté</strong> : gain de points par message/vocal, niveaux,</li>
-</ul>
-<p>  récompenses de rôle, classement, commandes personnalisées, annonces planifiées,</p>
-<p>  giveaways.</p>
-<ul>
-<li><strong>Fonctionnalité IA (`/ia`)</strong> : réservée aux serveurs disposant d'un abonnement</li>
-</ul>
-<p>  « premium », avec quota mensuel de requêtes et cooldown par utilisateur.</p>
-<ul>
-<li><strong>Dashboard web</strong> : interface de contrôle et de statistiques accessible aux</li>
-</ul>
-<p>  administrateurs du Bot.</p>
-<ul>
-<li><strong>Site des bannis</strong> : page publique listant les membres actuellement bannis du groupe</li>
-</ul>
-<p>  VRChat principal suivi par le Bot.</p>
-<p>L'Éditeur se réserve le droit d'ajouter, modifier ou retirer tout ou partie de ces</p>
-<p>fonctionnalités à tout moment, sans préavis.</p>
-<h2>3. Conditions d'accès</h2>
-<ul>
-<li>L'usage du Bot est soumis aux <a href="https://discord.com/terms">Conditions d'utilisation de Discord</a></li>
-</ul>
-<p>  et, pour les fonctionnalités VRChat, aux</p>
-<p>  <a href="https://hello.vrchat.com/legal">Conditions d'utilisation de VRChat</a>.</p>
-<ul>
-<li>L'utilisateur doit avoir l'âge minimum requis par Discord (13 ans, ou l'âge minimum</li>
-</ul>
-<p>  légal applicable dans son pays) pour utiliser le Bot.</p>
-<ul>
-<li>Certaines commandes sont réservées aux membres disposant d'un rôle de modérateur ou de</li>
-</ul>
-<p>  la permission « Gérer le serveur » sur le serveur concerné. L'attribution de ces rôles</p>
-<p>  relève de la seule responsabilité des administrateurs de chaque serveur, pas de</p>
-<p>  l'Éditeur.</p>
-<ul>
-<li>L'accès au Dashboard est protégé par un identifiant/mot de passe défini par</li>
-</ul>
-<p>  l'administrateur du Bot et ne doit pas être partagé avec des personnes non autorisées.</p>
-<h2>4. Comptes VRChat liés au Bot</h2>
-<p>En connectant un compte VRChat au Bot via la commande `/login`, l'utilisateur reconnaît</p>
-<p>et accepte que :</p>
-<ul>
-<li>ses identifiants VRChat (nom d'utilisateur et mot de passe) sont transmis au Bot afin</li>
-</ul>
-<p>  qu'il puisse s'authentifier auprès de l'API VRChat, y compris pour la validation d'un</p>
-<p>  code de double authentification (2FA) si le compte en dispose ;</p>
-<ul>
-<li>le mot de passe et le cookie de session résultant sont <strong>conservés par le Bot</strong> tant</li>
-</ul>
-<p>  que le compte reste enregistré, afin de permettre la reconnexion automatique en cas</p>
-<p>  d'expiration de session (voir la Politique de confidentialité pour le détail) ;</p>
-<ul>
-<li>ce compte sera utilisé par le Bot pour effectuer, en son nom, des actions de</li>
-</ul>
-<p>  modération au sein du groupe VRChat concerné (kick/ban/déban) lorsque celles-ci sont</p>
-<p>  demandées par un modérateur autorisé sur Discord ;</p>
-<ul>
-<li>il ne doit connecter que des comptes VRChat dont il a le droit d'usage, et jamais un</li>
-</ul>
-<p>  compte appartenant à un tiers sans son consentement explicite.</p>
-<p>Il est fortement recommandé d'utiliser un compte VRChat dédié à la modération plutôt</p>
-<p>qu'un compte personnel.</p>
-<h2>5. Utilisation acceptable</h2>
-<p>En utilisant le Bot, vous vous engagez à ne pas :</p>
-<ul>
-<li>tenter de contourner, perturber ou surcharger le Bot, le Dashboard ou l'API VRChat</li>
-</ul>
-<p>  (spam de commandes, scripts automatisés, exploitation de failles) ;</p>
-<ul>
-<li>utiliser la fonctionnalité `/ia` pour produire du contenu illégal, haineux, violent,</li>
-</ul>
-<p>  sexuel, harcelant, ou visant à contourner les protections mises en place par le</p>
-<p>  fournisseur du modèle d'IA ;</p>
-<ul>
-<li>utiliser le Bot pour usurper l'identité d'un tiers, diffuser de fausses informations</li>
-</ul>
-<p>  de modération, ou nuire délibérément à un membre de la communauté ;</p>
-<ul>
-<li>exploiter les identifiants du Dashboard, les jetons (tokens) ou toute donnée technique</li>
-</ul>
-<p>  du Bot à des fins autres que celles prévues par ces CU ;</p>
-<ul>
-<li>utiliser le Bot d'une manière qui violerait les Conditions d'utilisation de Discord ou</li>
-</ul>
-<p>  de VRChat.</p>
-<p>Tout manquement peut entraîner, à la discrétion de l'Éditeur ou des modérateurs du</p>
-<p>serveur concerné, une restriction ou suppression de l'accès aux fonctionnalités du Bot,</p>
-<p>en plus des sanctions Discord/VRChat éventuellement applicables.</p>
-<h2>6. Fonctionnalité IA et abonnement « premium »</h2>
-<ul>
-<li>L'accès à la commande `/ia` est conditionné à l'activation d'un statut « premium » ou</li>
-</ul>
-<p>  « offert » pour le serveur concerné, décidé par l'Éditeur.</p>
-<ul>
-<li>Un quota mensuel de requêtes par serveur et un budget global peuvent limiter ou</li>
-</ul>
-<p>  suspendre temporairement l'accès à cette fonctionnalité, sans que cela constitue un</p>
-<p>  dysfonctionnement du Bot.</p>
-<ul>
-<li>Les réponses générées par l'IA sont produites par un modèle tiers et n'engagent ni</li>
-</ul>
-<p>  l'exactitude, ni la responsabilité de l'Éditeur. Elles ne doivent pas être considérées</p>
-<p>  comme un avis professionnel (juridique, médical, financier ou autre).</p>
-<ul>
-<li>L'abonnement premium, lorsqu'il est payant, est accordé selon les modalités</li>
-</ul>
-<p>  communiquées séparément (durée, prix, modalités de paiement) par l'Éditeur ; ces CU ne</p>
-<p>  couvrent pas les conditions commerciales spécifiques d'achat.</p>
-<h2>7. Site des bannis (publication publique)</h2>
-<p>Les membres bannis du groupe VRChat principal suivi par le Bot sont publiés sur une page</p>
-<p>web publique (hébergée via GitHub Pages), incluant : pseudonyme VRChat, identifiant</p>
-<p>VRChat, date du bannissement, raison indiquée par le modérateur, et pseudonyme du</p>
-<p>modérateur ayant appliqué la sanction. Voir la Politique de confidentialité pour le</p>
-<p>détail et les modalités de contestation.</p>
-<h2>8. Disponibilité du service</h2>
-<p>Le Bot est fourni « en l'état », sans garantie de disponibilité continue, d'absence</p>
-<p>d'erreur ou de compatibilité avec toute version future de Discord ou de VRChat.</p>
-<p>L'Éditeur peut interrompre, suspendre ou modifier le Bot à tout moment, notamment pour</p>
-<p>maintenance, évolution technique, ou décision de VRChat/Discord affectant son</p>
-<p>fonctionnement (changement d'API, suspension de compte, etc.).</p>
-<h2>9. Limitation de responsabilité</h2>
-<p>Dans la limite permise par la loi applicable, l'Éditeur ne pourra être tenu responsable :</p>
-<ul>
-<li>des sanctions VRChat ou Discord appliquées à un compte connecté au Bot ou à un serveur</li>
-</ul>
-<p>  l'utilisant ;</p>
-<ul>
-<li>des pertes de données, interruptions de service, ou erreurs de fonctionnement du Bot ;</li>
-<li>des décisions de modération prises par les modérateurs d'un serveur via le Bot, ces</li>
-</ul>
-<p>  décisions relevant de leur seule responsabilité ;</p>
-<ul>
-<li>du contenu généré par la fonctionnalité IA.</li>
-</ul>
-<p>Ce Bot est un projet personnel/associatif fourni gratuitement pour les fonctionnalités</p>
-<p>de base ; il n'est pas exploité dans le cadre d'une activité commerciale garantissant un</p>
-<p>niveau de service.</p>
-<h2>10. Suppression de données et retrait</h2>
-<p>Tout utilisateur peut demander la suppression de ses données (compte VRChat lié,</p>
-<p>historique de modération le concernant, statistiques d'XP) selon les modalités décrites</p>
-<p>dans la Politique de confidentialité. Un modérateur peut à tout moment déconnecter un</p>
-<p>compte VRChat du Bot via `/logout`.</p>
-<h2>11. Modifications des présentes CU</h2>
-<p>L'Éditeur peut modifier ces CU à tout moment. La version en vigueur est celle publiée</p>
-<p>sur ce dépôt GitHub. En cas de modification substantielle, un effort raisonnable sera</p>
-<p>fait pour en informer les administrateurs des serveurs utilisant le Bot.</p>
-<h2>12. Droit applicable</h2>
-<p>Les présentes CU sont soumises au droit français, sans préjudice des dispositions</p>
-<p>impératives de protection des consommateurs ou des données personnelles qui pourraient</p>
-<p>s'appliquer dans le pays de résidence de l'utilisateur.</p>
-<h2>13. Contact</h2>
-<p>Pour toute question relative à ces CU : <strong>[TON EMAIL / CONTACT DISCORD]</strong></p>
-<hr>
-<p>Voir également la <a href="./POLITIQUE_CONFIDENTIALITE.md">Politique de confidentialité</a>.</p>
-</main>
+    <main>
+        <h1>Conditions d&apos;utilisation &mdash; VVs Bot</h1>
+        <p><strong>Derni&egrave;re mise &agrave; jour : [DATE &Agrave; COMPL&Eacute;TER]</strong></p>
+        <blockquote>Ce document n&apos;est pas un avis juridique professionnel. Il d&eacute;crit de bonne foi le</blockquote>
+        <blockquote>fonctionnement du bot et les r&egrave;gles d&apos;usage. Si le bot est utilis&eacute; &agrave; grande &eacute;chelle</blockquote>
+        <blockquote>ou sert un public dans l&apos;Union europ&eacute;enne, il est recommand&eacute; de le faire relire par</blockquote>
+        <blockquote>un professionnel du droit.</blockquote>
+        <h2>1. Objet</h2>
+        <p>Les pr&eacute;sentes Conditions d&apos;Utilisation (&laquo; CU &raquo;) r&eacute;gissent l&apos;usage du bot Discord</p>
+        <p><strong>VVs Bot</strong> , d&eacute;velopp&eacute; et maintenu par <strong>[Faolan]</strong>,.</p>
+        <p>En ajoutant le Bot &agrave; un serveur Discord, en utilisant l&apos;une de ses commandes, vous acceptez sans r&eacute;serve les pr&eacute;sentes CU. Si vous n&apos;&ecirc;tes pas d&apos;accord, n&apos;utilisez pas le Bot.</p>
+        <h2>2. Description du service</h2>
+        <p>Le Bot propose, selon les serveurs sur lesquels il est install&eacute; :</p>
+        <ul>
+            <li><strong>Mod&eacute;ration Discord</strong> : kick, ban, timeout, avertissements, purge de messages,</li>
+        </ul>
+        <p>anti-spam et anti-raid automatiques.</p>
+        <ul>
+            <li><strong>Gestion de serveur</strong> : cr&eacute;ation/suppression de salons, cat&eacute;gories et r&ocirc;les.</li>
+            <li><strong>Surveillance VRChat</strong> : suivi des instances ouvertes d&apos;un groupe VRChat, relais des</li>
+        </ul>
+        <p>annonces du groupe, d&eacute;tection et journalisation des kicks/avertissements/bannissements</p>
+        <p>appliqu&eacute;s au sein de ce groupe.</p>
+        <ul>
+            <li><strong>Compte(s) VRChat li&eacute;(s)</strong> : pour assurer cette surveillance, un ou plusieurs comptes</li>
+        </ul>
+        <p>VRChat doivent &ecirc;tre connect&eacute;s au Bot par un membre autoris&eacute; du serveur (voir section 4).</p>
+        <ul>
+            <li><strong>Syst&egrave;me d&apos;XP et de communaut&eacute;</strong> : gain de points par message/vocal, niveaux,</li>
+        </ul>
+        <p>r&eacute;compenses de r&ocirc;le, classement, commandes personnalis&eacute;es, annonces planifi&eacute;es,</p>
+        <p>giveaways.</p>
+        <ul>
+            <li><strong>Fonctionnalit&eacute; IA (`/ia`)</strong> : r&eacute;serv&eacute;e aux serveurs disposant d&apos;un abonnement</li>
+        </ul>
+        <p>&laquo; premium &raquo;, avec quota mensuel de requ&ecirc;tes et cooldown par utilisateur.</p>
+        <ul>
+            <li><strong>Dashboard web</strong> : interface de contr&ocirc;le et de statistiques accessible aux</li>
+        </ul>
+        <p>administrateurs du Bot.</p>
+        <ul>
+            <li><strong>Site des bannis</strong> : page publique listant les membres actuellement bannis du groupe</li>
+        </ul>
+        <p>VRChat principal suivi par le Bot.</p>
+        <p>L&apos;&Eacute;diteur se r&eacute;serve le droit d&apos;ajouter, modifier ou retirer tout ou partie de ces</p>
+        <p>fonctionnalit&eacute;s &agrave; tout moment, sans pr&eacute;avis.</p>
+        <h2>3. Conditions d&apos;acc&egrave;s</h2>
+        <ul>
+            <li>L&apos;usage du Bot est soumis aux <a href="https://discord.com/terms">Conditions d&apos;utilisation de Discord</a></li>
+        </ul>
+        <p>et, pour les fonctionnalit&eacute;s VRChat, aux</p>
+        <p><a href="https://hello.vrchat.com/legal">Conditions d&apos;utilisation de VRChat</a>.</p>
+        <ul>
+            <li>L&apos;utilisateur doit avoir l&apos;&acirc;ge minimum requis par Discord (13 ans, ou l&apos;&acirc;ge minimum</li>
+        </ul>
+        <p>l&eacute;gal applicable dans son pays) pour utiliser le Bot.</p>
+        <ul>
+            <li>Certaines commandes sont r&eacute;serv&eacute;es aux membres disposant d&apos;un r&ocirc;le de mod&eacute;rateur ou de</li>
+        </ul>
+        <p>la permission &laquo; G&eacute;rer le serveur &raquo; sur le serveur concern&eacute;. L&apos;attribution de ces r&ocirc;les</p>
+        <p>rel&egrave;ve de la seule responsabilit&eacute; des administrateurs de chaque serveur, pas de</p>
+        <p>l&apos;&Eacute;diteur.</p>
+        <ul>
+            <li>L&apos;acc&egrave;s au Dashboard est prot&eacute;g&eacute; par un identifiant/mot de passe d&eacute;fini par</li>
+        </ul>
+        <p>l&apos;administrateur du Bot et ne doit pas &ecirc;tre partag&eacute; avec des personnes non autoris&eacute;es.</p>
+        <h2>4. Comptes VRChat li&eacute;s au Bot</h2>
+        <p>En connectant un compte VRChat au Bot via la commande `/login`, l&apos;utilisateur reconna&icirc;t</p>
+        <p>et accepte que :</p>
+        <ul>
+            <li>ses identifiants VRChat (nom d&apos;utilisateur et mot de passe) sont transmis au Bot afin</li>
+        </ul>
+        <p>qu&apos;il puisse s&apos;authentifier aupr&egrave;s de l&apos;API VRChat, y compris pour la validation d&apos;un</p>
+        <p>code de double authentification (2FA) si le compte en dispose ;</p>
+        <ul>
+            <li>le mot de passe et le cookie de session r&eacute;sultant sont <strong>conserv&eacute;s par le Bot</strong> tant</li>
+        </ul>
+        <p>que le compte reste enregistr&eacute;, afin de permettre la reconnexion automatique en cas</p>
+        <p>d&apos;expiration de session (voir la Politique de confidentialit&eacute; pour le d&eacute;tail) ;</p>
+        <ul>
+            <li>ce compte sera utilis&eacute; par le Bot pour effectuer, en son nom, des actions de</li>
+        </ul>
+        <p>mod&eacute;ration au sein du groupe VRChat concern&eacute; (kick/ban/d&eacute;ban) lorsque celles-ci sont</p>
+        <p>demand&eacute;es par un mod&eacute;rateur autoris&eacute; sur Discord ;</p>
+        <ul>
+            <li>il ne doit connecter que des comptes VRChat dont il a le droit d&apos;usage, et jamais un</li>
+        </ul>
+        <p>compte appartenant &agrave; un tiers sans son consentement explicite.</p>
+        <p>Il est fortement recommand&eacute; d&apos;utiliser un compte VRChat d&eacute;di&eacute; &agrave; la mod&eacute;ration plut&ocirc;t</p>
+        <p>qu&apos;un compte personnel.</p>
+        <h2>5. Utilisation acceptable</h2>
+        <p>En utilisant le Bot, vous vous engagez &agrave; ne pas :</p>
+        <ul>
+            <li>tenter de contourner, perturber ou surcharger le Bot, le Dashboard ou l&apos;API VRChat</li>
+        </ul>
+        <p>(spam de commandes, scripts automatis&eacute;s, exploitation de failles) ;</p>
+        <ul>
+            <li>utiliser la fonctionnalit&eacute; `/ia` pour produire du contenu ill&eacute;gal, haineux, violent,</li>
+        </ul>
+        <p>sexuel, harcelant, ou visant &agrave; contourner les protections mises en place par le</p>
+        <p>fournisseur du mod&egrave;le d&apos;IA ;</p>
+        <ul>
+            <li>utiliser le Bot pour usurper l&apos;identit&eacute; d&apos;un tiers, diffuser de fausses informations</li>
+        </ul>
+        <p>de mod&eacute;ration, ou nuire d&eacute;lib&eacute;r&eacute;ment &agrave; un membre de la communaut&eacute; ;</p>
+        <ul>
+            <li>exploiter les identifiants du Dashboard, les jetons (tokens) ou toute donn&eacute;e technique</li>
+        </ul>
+        <p>du Bot &agrave; des fins autres que celles pr&eacute;vues par ces CU ;</p>
+        <ul>
+            <li>utiliser le Bot d&apos;une mani&egrave;re qui violerait les Conditions d&apos;utilisation de Discord ou</li>
+        </ul>
+        <p>de VRChat.</p>
+        <p>Tout manquement peut entra&icirc;ner, &agrave; la discr&eacute;tion de l&apos;&Eacute;diteur ou des mod&eacute;rateurs du</p>
+        <p>serveur concern&eacute;, une restriction ou suppression de l&apos;acc&egrave;s aux fonctionnalit&eacute;s du Bot,</p>
+        <p>en plus des sanctions Discord/VRChat &eacute;ventuellement applicables.</p>
+        <h2>6. Fonctionnalit&eacute; IA et abonnement &laquo; premium &raquo;</h2>
+        <ul>
+            <li>L&apos;acc&egrave;s &agrave; la commande `/ia` est conditionn&eacute; &agrave; l&apos;activation d&apos;un statut &laquo; premium &raquo; ou</li>
+        </ul>
+        <p>&laquo; offert &raquo; pour le serveur concern&eacute;, d&eacute;cid&eacute; par l&apos;&Eacute;diteur.</p>
+        <ul>
+            <li>Un quota mensuel de requ&ecirc;tes par serveur et un budget global peuvent limiter ou</li>
+        </ul>
+        <p>suspendre temporairement l&apos;acc&egrave;s &agrave; cette fonctionnalit&eacute;, sans que cela constitue un</p>
+        <p>dysfonctionnement du Bot.</p>
+        <ul>
+            <li>Les r&eacute;ponses g&eacute;n&eacute;r&eacute;es par l&apos;IA sont produites par un mod&egrave;le tiers et n&apos;engagent ni</li>
+        </ul>
+        <p>l&apos;exactitude, ni la responsabilit&eacute; de l&apos;&Eacute;diteur. Elles ne doivent pas &ecirc;tre consid&eacute;r&eacute;es</p>
+        <p>comme un avis professionnel (juridique, m&eacute;dical, financier ou autre).</p>
+        <ul>
+            <li>L&apos;abonnement premium, lorsqu&apos;il est payant, est accord&eacute; selon les modalit&eacute;s</li>
+        </ul>
+        <p>communiqu&eacute;es s&eacute;par&eacute;ment (dur&eacute;e, prix, modalit&eacute;s de paiement) par l&apos;&Eacute;diteur ; ces CU ne</p>
+        <p>couvrent pas les conditions commerciales sp&eacute;cifiques d&apos;achat.</p>
+        <h2>7. Site des bannis (publication publique)</h2>
+        <p>Les membres bannis du groupe VRChat principal suivi par le Bot sont publi&eacute;s sur une page</p>
+        <p>web publique (h&eacute;berg&eacute;e via GitHub Pages), incluant : pseudonyme VRChat, identifiant</p>
+        <p>VRChat, date du bannissement, raison indiqu&eacute;e par le mod&eacute;rateur, et pseudonyme du</p>
+        <p>mod&eacute;rateur ayant appliqu&eacute; la sanction. Voir la Politique de confidentialit&eacute; pour le</p>
+        <p>d&eacute;tail et les modalit&eacute;s de contestation.</p>
+        <h2>8. Disponibilit&eacute; du service</h2>
+        <p>Le Bot est fourni &laquo; en l&apos;&eacute;tat &raquo;, sans garantie de disponibilit&eacute; continue, d&apos;absence</p>
+        <p>d&apos;erreur ou de compatibilit&eacute; avec toute version future de Discord ou de VRChat.</p>
+        <p>L&apos;&Eacute;diteur peut interrompre, suspendre ou modifier le Bot &agrave; tout moment, notamment pour</p>
+        <p>maintenance, &eacute;volution technique, ou d&eacute;cision de VRChat/Discord affectant son</p>
+        <p>fonctionnement (changement d&apos;API, suspension de compte, etc.).</p>
+        <h2>9. Limitation de responsabilit&eacute;</h2>
+        <p>Dans la limite permise par la loi applicable, l&apos;&Eacute;diteur ne pourra &ecirc;tre tenu responsable :</p>
+        <ul>
+            <li>des sanctions VRChat ou Discord appliqu&eacute;es &agrave; un compte connect&eacute; au Bot ou &agrave; un serveur</li>
+        </ul>
+        <p>l&apos;utilisant ;</p>
+        <ul>
+            <li>des pertes de donn&eacute;es, interruptions de service, ou erreurs de fonctionnement du Bot ;</li>
+            <li>des d&eacute;cisions de mod&eacute;ration prises par les mod&eacute;rateurs d&apos;un serveur via le Bot, ces</li>
+        </ul>
+        <p>d&eacute;cisions relevant de leur seule responsabilit&eacute; ;</p>
+        <ul>
+            <li>du contenu g&eacute;n&eacute;r&eacute; par la fonctionnalit&eacute; IA.</li>
+        </ul>
+        <p>Ce Bot est un projet personnel/associatif fourni gratuitement pour les fonctionnalit&eacute;s</p>
+        <p>de base ; il n&apos;est pas exploit&eacute; dans le cadre d&apos;une activit&eacute; commerciale garantissant un</p>
+        <p>niveau de service.</p>
+        <h2>10. Suppression de donn&eacute;es et retrait</h2>
+        <p>Tout utilisateur peut demander la suppression de ses donn&eacute;es (compte VRChat li&eacute;,</p>
+        <p>historique de mod&eacute;ration le concernant, statistiques d&apos;XP) selon les modalit&eacute;s d&eacute;crites</p>
+        <p>dans la Politique de confidentialit&eacute;. Un mod&eacute;rateur peut &agrave; tout moment d&eacute;connecter un</p>
+        <p>compte VRChat du Bot via `/logout`.</p>
+        <h2>11. Modifications des pr&eacute;sentes CU</h2>
+        <p>L&apos;&Eacute;diteur peut modifier ces CU &agrave; tout moment. La version en vigueur est celle publi&eacute;e</p>
+        <p>sur ce d&eacute;p&ocirc;t GitHub. En cas de modification substantielle, un effort raisonnable sera</p>
+        <p>fait pour en informer les administrateurs des serveurs utilisant le Bot.</p>
+        <h2>12. Droit applicable</h2>
+        <p>Les pr&eacute;sentes CU sont soumises au droit fran&ccedil;ais, sans pr&eacute;judice des dispositions</p>
+        <p>imp&eacute;ratives de protection des consommateurs ou des donn&eacute;es personnelles qui pourraient</p>
+        <p>s&apos;appliquer dans le pays de r&eacute;sidence de l&apos;utilisateur.</p>
+        <h2>13. Contact</h2>
+        <p>Pour toute question relative &agrave; ces CU : <strong>[<a class="anchor__14d82 anchorUnderlineOnHover__14d82" href="https://discord.gg/pPFE3XECK6" rel="noreferrer noopener" target="_blank" title="https://discord.gg/pPFE3XECK6" role="link" tabindex="0" style='border: 0px; font-family: figtree, "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; margin: 0px; padding: 0px; vertical-align: baseline; color: oklch(0.75 0.1 215); cursor: pointer; text-decoration: oklch(0.75 0.1 215); outline: 0px; word-break: break-word; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: break-spaces; background-color: rgb(28, 31, 38);'><span style="border: 0px; font-family: inherit; font-size: 16px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px;">https://discord.gg/pPFE3XECK6</span></a>]</strong></p>
+        <hr>
+        <p>Voir &eacute;galement la <a href="./POLITIQUE_CONFIDENTIALITE.md">Politique de confidentialit&eacute;</a>.</p>
+    </main>
 </body>
+
 </html>
