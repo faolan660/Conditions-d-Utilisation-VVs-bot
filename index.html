@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conditions d'utilisation — VVs Bot</title>
+<meta name="description" content="Les règles d'utilisation de VVs Bot et de son dashboard : service, règles, responsabilités, données et contact.">
+<meta name="theme-color" content="#04070f">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{--bg:#04070f;--panel:#0a1120;--panel2:#0f1830;--line:#18233f;--text:#eef3ff;--muted:#8d9bbd;--blue:#5b8cff;--cyan:#bcd2ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--cyan);text-decoration:none}a:hover{color:#fff;text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+/* bandeau : l'image du thème VVs, fondue vers le fond noir */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:'';position:absolute;inset:0;background:url(banner.webp) center 40%/cover no-repeat;opacity:.55}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#04070f99 0%,#04070f55 40%,var(--bg) 100%),linear-gradient(90deg,#04070fcc 0%,transparent 60%)}
+.hero>*{position:relative;z-index:1}
+header{padding:22px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:18px}.logo img{height:46px;width:auto;display:block;filter:drop-shadow(0 0 14px #5b8cff88)}
+.pill{display:inline-block;padding:5px 13px;border-radius:99px;border:1px solid #2b3b63;background:#0a112099;color:var(--cyan);font-size:13px;backdrop-filter:blur(6px)}
+.hero-body{padding:46px 0 64px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#fff,#7fa6ff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px #5b8cff55}
+.lead{color:#c9d5f2;font-size:18px;max-width:640px;margin:0}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 30px}
+.summary div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;transition:border-color .2s,transform .2s}
+.summary div:hover{border-color:var(--blue);transform:translateY(-2px)}
+.summary b{display:block;color:var(--cyan);margin-bottom:4px}.summary span{color:var(--muted);font-size:14.5px}
+nav.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
+nav.toc b{display:block;margin-bottom:6px;color:var(--cyan)}nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:30px;font-size:15px}
+@media(max-width:640px){nav.toc ol{columns:1}}
+h2{font-size:23px;margin:42px 0 8px;padding-top:6px;scroll-margin-top:14px;display:flex;align-items:baseline;gap:10px}
+h2 span{color:var(--blue);font-weight:800}
+h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);align-self:center}
+p,li{color:#dbe4fb}ul{padding-left:22px}li{margin:6px 0}
+b{color:#fff}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{color:var(--cyan);font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:var(--panel2)}tr:last-child td{border-bottom:0}
+td:first-child{color:#fff;font-weight:600;white-space:nowrap}
+@media(max-width:640px){td:first-child{white-space:normal}}
+.note{background:#5b8cff14;border:1px solid #5b8cff66;border-radius:12px;padding:14px 16px;margin:16px 0}
+footer{margin-top:60px;padding:26px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="hero">
+<header><div class="wrap"><a class="logo" href="#"><img src="logo.png" alt="VVs"><span>Bot</span></a><span class="pill">Dernière mise à jour : 19 octobre 2026</span></div></header>
+<div class="wrap hero-body">
+<h1>Conditions <em>d'utilisation</em></h1>
+<p class="lead">En ajoutant VVs Bot à un serveur ou en utilisant son dashboard, tu acceptes les règles ci-dessous. Elles sont courtes, et elles protègent aussi bien les utilisateurs que le service.</p>
+</div></div>
+<main class="wrap">
+<div class="summary">
+<div><b>Simples et claires</b><span>Les règles essentielles, sans jargon inutile.</span></div>
+<div><b>Service gratuit</b><span>Proposé tel quel, sans garantie de disponibilité continue.</span></div>
+<div><b>Les admins décident</b><span>Chaque serveur choisit ses modules et en est responsable.</span></div>
+<div><b>Tes contenus restent à toi</b><span>Nous ne les utilisons que pour faire marcher les fonctions activées.</span></div>
+</div>
+
+<nav class="toc"><b>Sommaire</b><ol>
+<li><a href="#objet">Objet et acceptation</a></li>
+<li><a href="#service">Le service</a></li>
+<li><a href="#acces">Accès et âge minimum</a></li>
+<li><a href="#regles">Règles d'utilisation</a></li>
+<li><a href="#admins">Administrateurs de serveur</a></li>
+<li><a href="#fonctions">Fonctions particulières</a></li>
+<li><a href="#contenus">Contenus et propriété intellectuelle</a></li>
+<li><a href="#dispo">Disponibilité et évolutions</a></li>
+<li><a href="#suspension">Suspension et fin d'utilisation</a></li>
+<li><a href="#responsabilite">Limitation de responsabilité</a></li>
+<li><a href="#tiers">Services tiers</a></li>
+<li><a href="#modifs">Modification des conditions</a></li>
+<li><a href="#droit">Droit applicable</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol></nav>
+
+<h2 id="objet"><span>1.</span> Objet et acceptation</h2>
+<p>Ces conditions encadrent l'utilisation de <b>VVs Bot</b> (le bot Discord) et de son <b>dashboard web</b>. En ajoutant le bot à un serveur, en utilisant l'une de ses fonctions ou en te connectant au dashboard, tu acceptes ces conditions. Si tu n'es pas d'accord, n'utilise pas le service et retire le bot de ton serveur.</p>
+<p>Le traitement des données personnelles est décrit dans la <a href="https://comete448.github.io/Politique-de-confidentialit-VVs-bot/" rel="noopener">politique de confidentialité</a>, qui fait partie de ces conditions.</p>
+
+<h2 id="service"><span>2.</span> Le service</h2>
+<p>VVs Bot propose, selon les modules activés par les administrateurs d'un serveur : modération, niveaux, tickets, captcha, musique, jeux, giveaways, sondages, suggestions, starboard, anniversaires, annonces de streams, sauvegardes de serveur, ainsi que la surveillance d'un groupe VRChat.</p>
+<p>Le service est proposé <b>tel quel</b> et <b>gratuitement</b>, sans garantie de disponibilité continue. Certaines fonctions peuvent à l'avenir être réservées à une offre premium ; tu en seras informé avant tout changement.</p>
+
+<h2 id="acces"><span>3.</span> Accès et âge minimum</h2>
+<ul>
+<li>Tu dois avoir l'âge minimum exigé par Discord dans ton pays pour utiliser la plateforme.</li>
+<li>Le dashboard est accessible avec ton compte Discord. Tu ne vois et ne gères que les serveurs sur lesquels tu as la permission « Gérer le serveur » ou « Administrateur ».</li>
+<li>Tu es responsable de l'usage fait avec ton compte. N'offre pas l'accès à ton compte à quelqu'un d'autre.</li>
+</ul>
+
+<h2 id="regles"><span>4.</span> Règles d'utilisation</h2>
+<p>Tu t'engages à respecter les <a href="https://discord.com/terms" rel="noopener">Conditions d'utilisation de Discord</a> et ses <a href="https://discord.com/guidelines" rel="noopener">règles de la communauté</a>. Il est interdit de :</p>
+<ul>
+<li>utiliser le bot pour harceler, menacer, spammer, tromper ou nuire à d'autres personnes ;</li>
+<li>contourner une sanction, un captcha ou une restriction mise en place par un serveur ;</li>
+<li>chercher à perturber le service, en saturer les ressources, en exploiter une faille ou accéder aux données d'un serveur dont tu n'es pas administrateur (signale plutôt la faille sur le serveur de support) ;</li>
+<li>utiliser le bot pour tout usage illégal, ou pour diffuser des contenus illicites, haineux ou portant atteinte aux droits d'autrui ;</li>
+<li>revendre le service ou le présenter comme le tien sans autorisation.</li>
+</ul>
+
+<h2 id="admins"><span>5.</span> Administrateurs de serveur</h2>
+<p>Les administrateurs d'un serveur décident des modules activés et de leurs réglages. Ils sont <b>responsables</b> :</p>
+<ul>
+<li>des sanctions, messages et rôles automatiques qu'ils configurent (AutoMod, captcha, rôles de niveau…) ;</li>
+<li>des informations qu'ils demandent ou publient à propos de leurs membres, et de les informer des fonctions activées (par exemple les transcripts de tickets ou le starboard) ;</li>
+<li>de choisir qui peut gérer le bot chez eux, et de placer le rôle du bot au bon endroit dans la liste des rôles ;</li>
+<li>des personnes qu'ils autorisent à utiliser les sauvegardes de serveur : seul le <b>Gérant</b> (propriétaire du serveur) choisit qui y a accès, et ces personnes peuvent restaurer une sauvegarde, ce qui modifie le serveur.</li>
+</ul>
+
+<h2 id="fonctions"><span>6.</span> Fonctions particulières</h2>
+<ul>
+<li><b>Musique</b> : le bot lit du son depuis des services tiers (YouTube, SoundCloud, Spotify, Deezer) à ta demande. Tu es responsable des contenus que tu fais jouer et du respect des droits d'auteur et des conditions de ces services. La fonction peut cesser de marcher si l'un d'eux bloque l'accès.</li>
+<li><b>Sauvegardes de serveur</b> : elles enregistrent la structure du serveur (rôles, salons, permissions, emojis), jamais les messages ni les membres. Une restauration fusionne avec l'existant : vérifie-la avant de la lancer. Garde aussi tes propres copies de ce qui est important.</li>
+<li><b>Tickets, suggestions, sondages, starboard</b> : les contenus publiés par les membres restent sous leur responsabilité. Les administrateurs peuvent les modérer ou les supprimer.</li>
+<li><b>Images personnalisées</b> : les images de fond fournies par lien ne doivent porter atteinte à aucun droit ; le bot peut refuser un lien qui n'est pas sûr.</li>
+<li><b>Comptes VRChat</b> : connecter un compte VRChat se fait à tes risques. Respecte les conditions de VRChat et utilise de préférence un <b>compte dédié</b> : VRChat peut limiter ou suspendre un compte utilisé par un bot, et nous ne pouvons pas l'empêcher.</li>
+</ul>
+
+<h2 id="contenus"><span>7.</span> Contenus et propriété intellectuelle</h2>
+<p>Tu gardes tous les droits sur tes contenus (messages, images, textes de configuration). Tu nous autorises seulement à les traiter dans la mesure nécessaire pour faire fonctionner les fonctions que tu as activées. Le nom « VVs Bot », son logo et son code sont la propriété de leur auteur ; ils ne peuvent pas être copiés ni réutilisés sans accord.</p>
+
+<h2 id="dispo"><span>8.</span> Disponibilité et évolutions</h2>
+<p>Le bot et le dashboard peuvent être interrompus pour maintenance, mise à jour, panne ou raison indépendante de notre volonté (y compris une panne de Discord, de VRChat ou d'un autre service tiers). Des fonctions peuvent être ajoutées, modifiées ou retirées à tout moment.</p>
+
+<h2 id="suspension"><span>9.</span> Suspension et fin d'utilisation</h2>
+<ul>
+<li><b>Par toi</b> : tu peux arrêter à tout moment en retirant le bot de ton serveur. Pour faire supprimer tes données, consulte la politique de confidentialité.</li>
+<li><b>Par nous</b> : l'accès au bot ou au dashboard peut être refusé ou retiré, sans préavis, à un utilisateur ou à un serveur qui ne respecte pas ces conditions ou qui met le service en danger.</li>
+</ul>
+
+<h2 id="responsabilite"><span>10.</span> Limitation de responsabilité</h2>
+<p>Dans la mesure permise par la loi, VVs Bot est fourni <b>sans garantie</b> d'aucune sorte. Son propriétaire ne peut pas être tenu responsable d'une perte de données, d'une interruption de service, d'une mauvaise configuration, des contenus publiés par les utilisateurs, ni des conséquences d'une sanction ou d'une restauration décidée par les administrateurs d'un serveur.</p>
+<p>Ces limites ne s'appliquent pas aux droits que la loi ne permet pas d'écarter.</p>
+
+<h2 id="tiers"><span>11.</span> Services tiers</h2>
+<p>VVs Bot <b>n'est affilié ni à Discord, ni à VRChat, ni à YouTube, Twitch, Spotify, SoundCloud ou Deezer</b>. Ces noms appartiennent à leurs propriétaires. L'utilisation de ces services reste soumise à leurs propres conditions.</p>
+
+<h2 id="modifs"><span>12.</span> Modification des conditions</h2>
+<p>Ces conditions peuvent évoluer. La date de dernière mise à jour figure en haut de la page. En cas de changement important, une annonce est faite sur le <a href="https://discord.gg/pPFE3XECK6" rel="noopener">serveur de support</a>. Continuer à utiliser le service après une modification vaut acceptation.</p>
+
+<h2 id="droit"><span>13.</span> Droit applicable</h2>
+<p>Ces conditions sont soumises au <b>droit français</b>. En cas de litige, nous cherchons d'abord une solution amiable ; à défaut, les tribunaux compétents sont ceux désignés par la loi.</p>
+
+<h2 id="contact"><span>14.</span> Contact</h2>
+<p>Pour toute question, signalement ou demande, contacte le propriétaire du bot sur le <b>serveur Discord de support</b> : <a href="https://discord.gg/pPFE3XECK6" rel="noopener">https://discord.gg/pPFE3XECK6</a>.</p>
+</main>
+<footer><div class="wrap">VVs Bot · Conditions d'utilisation · Version du 19 octobre 2026 · <a href="https://comete448.github.io/Politique-de-confidentialit-VVs-bot/">Politique de confidentialité</a></div></footer>
+</body>
+</html>
